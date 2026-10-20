@@ -1,0 +1,18 @@
+{
+  "created_at_utc": "2026-10-20T17:12:29.257603+00:00",
+  "rows": 390,
+  "columns": [
+    "DISTRITO",
+    "ANIO",
+    "MES",
+    "COSTO_SOCIAL_MENSUAL",
+    "TOTAL_ACCIDENTES",
+    "QUEJAS_SEMAFOROS",
+    "QUEJAS_LUMINARIAS",
+    "CLIMA_LLUVIA_PROMEDIO",
+    "CLIMA_NIEVE_PROMEDIO",
+    "ATENCIONES_MEDICAS"
+  ],
+  "sha256": "dc22dda940f3e1bef847ca68d4cda723ec67ba867b66908dac53850f68268895",
+  "query": "C:\\Users\\USER\\Documents\\Bussiness_Inteligence_U\\EconometriaNYC_DOT\\simulador_ahorro_vial\\sql\\econometria.sql"
+}

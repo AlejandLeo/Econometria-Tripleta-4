@@ -1,0 +1,44 @@
+{
+  "model_id": "econometria_nyc_dot_hc3_v1",
+  "model_type": "OLS con matriz de covarianza robusta HC3",
+  "source_notebook": "../../EconometriaA.ipynb",
+  "estimated_on": "2026-10-20",
+  "observation_period": {
+    "start": "2020-01",
+    "end": "2026-06"
+  },
+  "observations": 390,
+  "geography": "Cinco distritos de la ciudad de Nueva York",
+  "dependent_variable": "COSTO_SOCIAL_MENSUAL",
+  "variables": {
+    "traffic_signal_complaints": {
+      "source_column": "QUEJAS_SEMAFOROS",
+      "coefficient": 151001.35,
+      "ci95_low": 11300.0,
+      "ci95_high": 291000.0,
+      "unit": "USD por queja mensual equivalente"
+    },
+    "street_light_complaints": {
+      "source_column": "QUEJAS_LUMINARIAS",
+      "coefficient": 45958.75,
+      "ci95_low": 32200.0,
+      "ci95_high": 59700.0,
+      "unit": "USD por queja mensual equivalente"
+    }
+  },
+  "controls": [
+    "CLIMA_LLUVIA_PROMEDIO",
+    "CLIMA_NIEVE_PROMEDIO"
+  ],
+  "metrics": {
+    "r_squared": 0.318,
+    "adjusted_r_squared": 0.311,
+    "test_rmse_usd": 345593216.08,
+    "test_rmse_share_of_mean": 0.51,
+    "breusch_pagan_p_value": 0.00013583,
+    "white_p_value": 0.0010917
+  },
+  "interpretation": "Los coeficientes representan asociaciones estadísticas y no efectos causales demostrados.",
+  "interval_note": "Los límites HC3 se transcriben con el redondeo mostrado en el resumen del notebook."
+}
+
